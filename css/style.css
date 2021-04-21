@@ -1,9 +1,10 @@
 body {
 	font-family: "Segoe UI";
 }
-.menu a {text-decoration: none;
-color: #898989;
-padding-left: 20px;}
+a{text-decoration: none;}
+.menu a {
+     color: #898989;
+     padding-left: 20px;}
 
 .menu {
 	background-color: #f6f6f6;
@@ -305,4 +306,144 @@ main h6 {
 	padding-left: 5px;
 	background: url("../img1/time.png") no-repeat;
 	background-size: contain;
+}
+
+.row .tasks, .row .emplo{
+	box-shadow: 0 0 10px #c3c3c3;
+	width: 50%;
+	height: 300px;
+	margin-right: 15px;
+}
+.row .tasks ul {
+	margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+	display: grid;
+	grid-template-columns: auto 355px auto auto;
+	grid-auto-rows: minmax(50px, auto);
+	grid-column-gap: 15px;
+	grid-row-gap: 10px;
+}
+/*.row .tasks ul li:nth-child(2) {
+	border-bottom: 2px solid #000;
+}*/
+.row .tasks ul li img {
+	width: 20px;
+	height: 20px;
+}
+.row .tasks ul li span{
+	font-size: 14px;
+	line-height: 1.5;
+}
+.row .tasks .tasksimg {
+	position: absolute;
+    width: 33%;
+	height: 60px;
+	top:565px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #d89e24;
+	margin-left: 20px;
+}
+.row .tasks .tasksimg p{
+	margin-left: 25px;
+	margin-right: 15px;
+	color: #fff;
+}
+.row .tasks .tasksimg a{width: 85px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+justify-content: center;
+color: #fff;
+margin-right: 10px}
+.row .tasks .tasksimg a:nth-child(2)::before{
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	padding-left: 5px;
+	background: url("../img1/bug.svg") no-repeat;
+	background-size: contain;
+}
+.row .tasks .tasksimg a:nth-child(3)::before{
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	padding-left: 5px;
+	background: url("../img1/web.svg") no-repeat;
+	background-size: contain;
+}
+.row .tasks .tasksimg a:nth-child(4)::before{
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	padding-left: 15px;
+	background: url("../img1/cloud.svg") no-repeat;
+	background-size: contain;
+}
+.row .tasks .tasksimg a:hover{
+	background-color: #dead49;
+}
+.row .emplo ul {
+	margin-top: 70px;
+	margin-left: 35px;
+    align-items: center;
+	display: grid;
+	grid-template-columns: 15% 35% 20% 20%;
+	grid-auto-rows: minmax(30px, auto);
+}
+.row .emplo ul li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #d3d3d3;
+	color: #3b3a38;
+	font-size: 14px;
+}
+.row .emplo ul li:last-child,.row .emplo ul li:nth-child(19),
+.row .emplo ul li:nth-child(18),.row .emplo ul li:nth-child(17)
+{border-bottom: none;}
+.row .emplo ul li:nth-child(1), .row .emplo ul li:nth-child(2),
+.row .emplo ul li:nth-child(3), .row .emplo ul li:nth-child(4){
+	color: #4fa5af;
+}
+.row .emplo .emploimg {
+	position: absolute;
+    width: 33%;
+	height: 70px;
+	top:565px;
+	display: flex;
+	flex-direction: column;
+	background-color: #274d97;
+	margin-left: 20px;
+	color: #fff;
+}
+
+.row .emplo .emploimg p:first-child{
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	margin-left: 4%;
+}
+.row .emplo .emploimg p:last-child{
+	font-size: 14px;
+	margin-left: 4%;
+}
+footer{margin-left: 23%;}
+footer ul {display: flex;}
+footer ul li{
+	color: #3c3b3b;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left: 25px;
+	margin-top: 20px;
+}
+
+footer p {
+	margin-left: 80%;
+	color: #8f8e8c;
+	margin-top: -20px;
 }

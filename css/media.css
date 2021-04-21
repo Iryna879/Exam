@@ -1,4 +1,7 @@
 @media (max-width: 1000px) and (min-width: 800px){
+  .menu {
+  	width: 22%;
+  }
   .row {
 	flex-wrap: wrap; 
 }
@@ -49,4 +52,18 @@
 }
 .row .daily p:nth-child(5),.row .email p:nth-child(5),
 .row .completed p:nth-child(5){margin-left: 10%;}
+.row .tasks, .row .emplo{
+	width: 80%;
+	margin-bottom: 65px;
 }
+.row .tasks .tasksimg {
+	width: 55%;
+	top:790px;
+}
+.row .emplo .emploimg {
+	width: 55%;
+	top:115%;
+}
+footer p {margin-left: 70%;}
+}
+
