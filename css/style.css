@@ -5,17 +5,59 @@ a{text-decoration: none;}
 .menu a {
      color: #898989;
      padding-left: 20px;}
-
+#menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  display: flex; 
+  align-items: center;  
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+visibility: hidden;
+z-index: 2;
+top:4.5%;
+left: 6%;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color:#4a4748;
+  
+}
+.menu__btn > span::before {
+  content: '';
+  top: -7px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 7px;
+}
 .menu {
 	background-color: #f6f6f6;
 	width: 20%;
 	height: 100%;
 	position: fixed; 
-    z-index: 1;
+    /*z-index: 1;*/
     top: 0; 
     left: 0;
 }
-
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
 .menu p {
 	  font-size: 18px;
       padding-top: 35px;
@@ -24,7 +66,6 @@ a{text-decoration: none;}
       color: #3c3b3b;
       font-weight: bold;
 }
-
 .menu ul li {
 	display: flex;
 	align-items: center;
@@ -162,27 +203,13 @@ main h6 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.row .dataimg {
-	background-color: #448b00;
-	top:100px;
-	left: 26%;
-}
-.row .revimg {
-	background-color: #d89e24;
-	top:100px;
 	margin-left: 1%;
-}
-.row .fiximg {
-	background-color: #274d97;
 	top:100px;
-	margin-left: 1%;
 }
-.row .follimg {
-	background-color: #c32056;
-	top:100px;
-	margin-left: 1%;
-}
+.row .dataimg {background-color: #448b00;}
+.row .revimg {background-color: #d89e24;}
+.row .fiximg {background-color: #274d97;}
+.row .follimg {background-color: #c32056;}
 .row .data p:nth-child(3),.row .revenue p:nth-child(3),
 .row .fixed p:nth-child(3), .row .followers p:nth-child(3){
     font-size: 23px;
@@ -319,12 +346,12 @@ main h6 {
     justify-content: center;
     align-items: center;
 	display: grid;
-	grid-template-columns: auto 355px auto auto;
+	grid-template-columns: 5% 75% 5% 5%;
 	grid-auto-rows: minmax(50px, auto);
-	grid-column-gap: 15px;
 	grid-row-gap: 10px;
 }
-/*.row .tasks ul li:nth-child(2) {
+/*.row .tasks ul li {
+	padding-bottom: 26px;
 	border-bottom: 2px solid #000;
 }*/
 .row .tasks ul li img {
