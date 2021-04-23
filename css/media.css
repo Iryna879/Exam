@@ -60,6 +60,15 @@
 	width: 65%;
 	top:790px;
 }
+.row .tasks ul {
+	grid-template-columns: 5% 70% 7% 8%;
+	grid-row-gap: 0;
+	
+}
+.row .tasks ul li span{
+	display: block;
+	margin-top: 10px;
+}
 .row .emplo .emploimg {
 	width: 65%;
 	top:1160px;
@@ -113,6 +122,7 @@ width: 100%; }
      margin-left: 70%;
 }
 .row .fixed, .row .followers{margin-bottom: 0}
+.row .dataimg, .row .revimg {top:100px;}
 .row .fiximg, .row .follimg {top:265px;}
 .row .data p:nth-child(4),.row .revenue p:nth-child(4),
 .row .fixed p:nth-child(4), .row .followers p:nth-child(4)

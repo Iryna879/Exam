@@ -210,7 +210,7 @@ main h6 {
 	justify-content: center;
 	align-items: center;
 	margin-left: 1%;
-	top:100px;
+	top:110px;
 	box-shadow: 0 0 10px #c3c3c3;
 }
 .row .dataimg {background-color: #448b00;}
@@ -290,20 +290,18 @@ main h6 {
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0 0 10px #c3c3c3;
+	top:280px;
 }
 .row .dailyimg {
 	background-color: #448b00;
-	top:270px;
 	left: 26%;
 }
 .row .emailimg {
 	background-color: #d89e24;
-	top:270px;
 	margin-left: 1%;
 }
 .row .compimg {
 	background-color: #274d97;
-	top:270px;
 	margin-left: 1%;
 }
 .row .daily p:nth-child(2),.row .email p:nth-child(2),
@@ -351,35 +349,56 @@ main h6 {
 .row .tasks ul {
 	margin-top: 50px;
     justify-content: center;
-    align-items: center;
+   /* align-items: center;*/
 	display: grid;
 	grid-template-columns: 5% 75% 5% 5%;
 	grid-auto-rows: minmax(50px, auto);
 	grid-row-gap: 10px;
+	/*background-color: red;*/
 }
-/*.row .tasks ul li {
+/*.row .tasks ul li:nth-child(1){
 	padding-bottom: 26px;
-	border-bottom: 2px solid #000;
+}
+.row .tasks ul li:nth-child(3){
+	padding-bottom: 24px;
 }*/
+.row .tasks ul li input{
+	margin-top: 15px;
+}
+
+.row .tasks ul li {
+	/*padding-bottom: 26px;*/
+	border-bottom: 2px solid #d3d3d3;
+	
+}
 .row .tasks ul li img {
 	width: 20px;
 	height: 20px;
+	margin-top: 10px;
 }
 .row .tasks ul li span{
 	font-size: 14px;
 	line-height: 1.5;
 }
-.row .tasks .tasksimg {
+.row .tasks .tasksimg, .row .emplo .emploimg {
 	position: absolute;
     width: 33%;
+    top:580px;
+    display: flex;
+    margin-left: 20px;
+    box-shadow: 0 0 10px #c3c3c3;
+}
+.row .tasks .tasksimg {
 	height: 60px;
-	top:565px;
-	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background-color: #d89e24;
-	margin-left: 20px;
-	box-shadow: 0 0 10px #c3c3c3;
+	background-color: #d89e24;		
+}
+.row .emplo .emploimg {
+	height: 70px;
+	flex-direction: column;
+	background-color: #274d97;
+	color: #fff;
 }
 .row .tasks .tasksimg p{
 	margin-left: 25px;
@@ -444,18 +463,6 @@ margin-right: 10px}
 .row .emplo ul li:nth-child(1), .row .emplo ul li:nth-child(2),
 .row .emplo ul li:nth-child(3), .row .emplo ul li:nth-child(4){
 	color: #4fa5af;
-}
-.row .emplo .emploimg {
-	position: absolute;
-    width: 33%;
-	height: 70px;
-	top:565px;
-	display: flex;
-	flex-direction: column;
-	background-color: #274d97;
-	margin-left: 20px;
-	color: #fff;
-	box-shadow: 0 0 10px #c3c3c3;
 }
 
 .row .emplo .emploimg p:first-child{
