@@ -77,10 +77,7 @@ footer p {margin-left: 70%;}
 
 
 @media (max-width: 800px) {
-.menu {
-  	visibility: hidden;
-  	width: 20%;
-  }
+.menu {visibility: hidden;}
 .menu a {padding-left: 10px;}
   .menu p {
 	  font-size: 14px;
@@ -107,18 +104,11 @@ footer p {margin-left: 70%;}
 }
 main h6 {margin-left: 11%;
 margin-top: 3%;}
-.row {flex-wrap: wrap;
+.row {
 margin-left: 5%;
 width: 100%; }
 .row .data, .row .revenue, .row .fixed, .row .followers{
-	width: 40%;
-	margin-bottom: 50px;
-}
-.row .data .text,.row .fixed .text{
-     margin-left: 65%;
-}
-.row .revenue .text,.row .followers .text{
-     margin-left: 70%;
+	width: 40%;	
 }
 .row .fixed, .row .followers{margin-bottom: 0}
 .row .dataimg, .row .revimg {top:100px;}
@@ -129,7 +119,6 @@ width: 100%; }
 .row .daily, .row .email, .row .completed{
 	width: 26%;
 	height: 200px;
-	margin-right: 15px;
 }
 .row .dailyimg, .row .emailimg, .row .compimg {top:440px;}
 .row .dailyimg {left: 6%;}
@@ -138,7 +127,6 @@ width: 100%; }
     height: 95px;
     margin-left: 15px;
 }
-.row .emailimg, .row .compimg{margin-left: 20px;}
 .row .daily img , .row .email img, .row .completed img{
 	width: 80%;
 	height: 80%;
@@ -146,7 +134,6 @@ width: 100%; }
 .row .daily p:nth-child(2),.row .email p:nth-child(2),
 .row .completed p:nth-child(2){
     font-size: 15px;
-    width: 150px;
     margin-top: 85px;
     margin-left: 12%;
     margin-bottom: 5px;
@@ -154,7 +141,6 @@ width: 100%; }
 .row .daily p:nth-child(3),.row .email p:nth-child(3),
 .row .completed p:nth-child(3){
     font-size: 14px;
-    width: 160px;
     margin-left: 12%;
        line-height: 1.2;
 }
@@ -168,10 +154,6 @@ font-size: 10px;}
 .row .tasks .tasksimg {
 	width: 75%;
 	top:700px;
-}
-.row .tasks ul li span{
-	display: block;
-	margin-top: 10px;
 }
 .row .emplo .emploimg {
 	width: 75%;
@@ -196,51 +178,16 @@ margin-top: -60px;}
   	visibility: hidden;
   	width: 30%;
   }
-.menu a {padding-left: 10px;}
-  .menu p {
-	  font-size: 14px;
-      padding-top: 45px;
-      padding-left: 25px;
-      padding-bottom: 0;
-    }
-
-.menu ul li {
-	width: 80%;
-	font-size: 14px;
-    margin-left: 15px;
-}
-.menu__btn{visibility:visible;}	
-#menu__toggle:checked ~ .menu {
-  visibility: visible;
- z-index: 1;
- left: 0;
-}
-#menu__toggle:checked ~ .menu__btn {
-  left: 0;
-  top: 0;
-  position: fixed;
-}
 main h6 {margin-left: 11%;
 margin-top: 3.5%;}
-.row {flex-wrap: wrap;
-margin-left: 5%;
-width: 100%; }
-.row .data, .row .revenue, .row .fixed, .row .followers{
-	width: 40%;
-	margin-bottom: 50px;
-}
 .row .data .text,.row .fixed .text{
      margin-left: 57%;
 }
 .row .revenue .text,.row .followers .text{
      margin-left: 65%;
 }
-.row .fixed, .row .followers{margin-bottom: 0}
 .row .dataimg, .row .revimg {top:95px; margin-left: 2%;}
 .row .fiximg, .row .follimg {top:260px; margin-left: 2%;}
-.row .data p:nth-child(4),.row .revenue p:nth-child(4),
-.row .fixed p:nth-child(4), .row .followers p:nth-child(4)
-{margin-top: 15px;}
 .row .daily, .row .email, .row .completed{
 	width: 84%;
 	height: 300px;
@@ -252,21 +199,14 @@ width: 100%; }
     height: 200px;
     margin-left: 15px;
 }
-.row .emailimg {margin-top: 350px;}
-.row .compimg {margin-top:700px;}
-.row .dailyimg {left: 6%;}
-.row .emailimg, .row .compimg{margin-left: 20px;}
-.row .daily img , .row .email img, .row .completed img{
-	width: 80%;
-	height: 80%;
-}
+.row .emailimg {top: 785px;}
+.row .compimg {top:1130px;}
 .row .daily p:nth-child(2),.row .email p:nth-child(2),
 .row .completed p:nth-child(2){
     font-size: 20px;
     width: 100%;
     margin-top: 190px;
     margin-left: 5%;
-    margin-bottom: 5px;
 }
 .row .daily p:nth-child(3),.row .email p:nth-child(3),
 .row .completed p:nth-child(3){
@@ -277,26 +217,15 @@ width: 100%; }
 .row .daily p:nth-child(5),.row .email p:nth-child(5),
 .row .completed p:nth-child(5){margin-left: 5%;
 font-size: 14px;}
-.row .tasks, .row .emplo{
-	width: 84%;
-	margin-bottom: 45px;
-}
+.row .tasks, .row .emplo{width: 84%;}
 .row .tasks .tasksimg {
-	width: 75%;
-	margin-top:780px;
+	top:1500px;
 }
 .row .tasks {padding-bottom: 25px;}
-.row .tasks ul li span{
-	display: block;
-	margin-top: 10px;
-}
 .row .emplo .emploimg {
-	width: 75%;
-	margin-top:830px;
+	top:1870px;
 }
-footer { margin-left: 0; }
 footer ul li{
-	margin-bottom: 45px;
 	margin-left: 30px;
 	font-size: 12px;
 }
@@ -308,39 +237,9 @@ font-size: 14px;}
 
 @media (max-width: 500px) {
 
-.menu {
-  	/*visibility: hidden;*/
-  	width: 35%;
-  }
-/*.menu a {padding-left: 10px;}
-  .menu p {
-	  font-size: 14px;
-      padding-top: 45px;
-      padding-left: 25px;
-      padding-bottom: 0;
-    }
-
-.menu ul li {
-	width: 80%;
-	font-size: 14px;
-    margin-left: 15px;
-}
-.menu__btn{visibility:visible;}	
-#menu__toggle:checked ~ .menu {
-  visibility: visible;
- z-index: 1;
- left: 0;
-}
-#menu__toggle:checked ~ .menu__btn {
-  left: 0;
-  top: 0;
-  position: fixed;
-}*/
+.menu {width: 35%;}
 main h6 {margin-left: 14%;
 margin-top: 4%;}
-.row {flex-wrap: wrap;
-margin-left: 5%;
-width: 100%; }
 .row .data, .row .revenue, .row .fixed, .row .followers{
 	width: 85%;
 	margin-bottom: 50px;
@@ -352,76 +251,28 @@ width: 100%; }
 .row .revenue .text,.row .followers .text{
      margin-left: 78%;
 }
- .row .revimg {margin-top:170px; margin-left: 2%;}
-.row .fiximg {margin-top:170px; margin-left: 2%;}
- .row .follimg {margin-top:330px; margin-left: 2%;}
+ .row .revimg {top:260px; margin-left: 2%;}
+.row .fiximg {top:425px; margin-left: 2%;}
+ .row .follimg {top:590px; margin-left: 2%;}
 .row .daily, .row .email, .row .completed{
 	width: 85%;
-	/*height: 300px;*/
-	margin-bottom: 50px;
 }
-.row .completed {margin-bottom: 0}
-.row .dailyimg, .row .emailimg, .row .compimg {
-    width: 75%;
-    height: 200px;
-    margin-left: 15px;
-}
-.row .dailyimg {margin-top:320px;}
-.row .emailimg {margin-top: 680px;}
-.row .compimg {margin-top:1020px;}
-/*.row .dailyimg {left: 6%;}*/
-.row .emailimg, .row .compimg{margin-left: 20px;}
-.row .daily img , .row .email img, .row .completed img{
-	width: 80%;
-	height: 80%;
-}
-.row .daily p:nth-child(2),.row .email p:nth-child(2),
-.row .completed p:nth-child(2){
-    font-size: 20px;
-    width: 100%;
-    margin-top: 190px;
-    margin-left: 5%;
-    margin-bottom: 5px;
-}
-.row .daily p:nth-child(3),.row .email p:nth-child(3),
-.row .completed p:nth-child(3){
-    font-size: 16px;
-    width: 100%;
-    margin-left: 5%;
-}
-.row .daily p:nth-child(5),.row .email p:nth-child(5),
-.row .completed p:nth-child(5){margin-left: 5%;
-font-size: 14px;}
+.row .dailyimg {top:760px;}
+.row .emailimg {top: 1110px;}
+.row .compimg {top:1460px;}
 .row .tasks, .row .emplo{
-	width: 84%;
-	margin-bottom: 45px;
 	padding-bottom: 25px;
 	height: 30%;
 }
 .row .tasks .tasksimg {
-	/*width: 75%;*/
-	top:1050px;
+	top:1830px;
 	font-size: 14px;
-}
-.row .tasks ul li span{
-	display: block;
-	margin-top: 10px;
 }
 .row .tasks ul li input {
     margin-top: 25px;
 }
 .row .emplo .emploimg {
-	/*width: 75%;*/
-	top:1320px;
+	top:2160px;
 }
-footer { margin-left: 0; }
-footer ul li{
-	margin-bottom: 45px;
-	margin-left: 30px;
-	font-size: 12px;
-}
-footer p {margin-left: 60%;
-margin-top: -58px;
-font-size: 14px;}
 }
 
