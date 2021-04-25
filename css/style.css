@@ -2,6 +2,9 @@ body {
 	font-family: "Segoe UI";
 }
 a{text-decoration: none;}
+main hr {
+width: 90%;
+}
 .menu a {
      color: #898989;
      padding-left: 20px;}
@@ -463,6 +466,7 @@ margin-right: 10px}
 	font-size: 14px;
 	margin-left: 4%;
 }
+
 footer{margin-left: 23%;}
 footer ul {display: flex;}
 footer ul li {
