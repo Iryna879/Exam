@@ -78,7 +78,6 @@ footer p {margin-left: 70%;}
 
 @media (max-width: 800px) {
 .menu {visibility: hidden;}
-.menu a {padding-left: 10px;}
   .menu p {
 	  font-size: 14px;
       padding-top: 45px;
@@ -86,16 +85,14 @@ footer p {margin-left: 70%;}
       padding-bottom: 0;
     }
 
-.menu ul li {
-	width: 80%;
-	font-size: 14px;
-    margin-left: 15px;
-}
+.menu ul li {font-size: 14px;}
+.menu ul li a:hover  {width: 85%;}
 .menu__btn{visibility:visible;}	
 #menu__toggle:checked ~ .menu {
   visibility: visible;
  z-index: 1;
  left: 0;
+ width: 25%;
 }
 #menu__toggle:checked ~ .menu__btn {
   left: 0;
@@ -222,6 +219,7 @@ font-size: 14px;}
 	top:1500px;
 }
 .row .tasks {padding-bottom: 25px;}
+.row .tasks ul li input {margin-top: 20px;}
 .row .emplo .emploimg {
 	top:1870px;
 }
