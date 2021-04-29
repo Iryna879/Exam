@@ -61,12 +61,8 @@
 }
 .row .tasks ul {
 	grid-template-columns: 5% 70% 7% 8%;
-	grid-row-gap: 0;
+	grid-row-gap: 15px;
 	
-}
-.row .tasks ul li span{
-	display: block;
-	margin-top: 10px;
 }
 .row .emplo .emploimg {
 	width: 65%;
@@ -219,7 +215,10 @@ font-size: 14px;}
 	top:1500px;
 }
 .row .tasks {padding-bottom: 25px;}
-.row .tasks ul li input {margin-top: 20px;}
+.row .tasks ul {
+  grid-row-gap: 10px;
+  
+}
 .row .emplo .emploimg {
 	top:1870px;
 }
@@ -265,9 +264,6 @@ margin-top: 4%;}
 .row .tasks .tasksimg {
 	top:1830px;
 	font-size: 14px;
-}
-.row .tasks ul li input {
-    margin-top: 25px;
 }
 .row .emplo .emploimg {
 	top:2160px;

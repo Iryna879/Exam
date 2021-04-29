@@ -53,6 +53,7 @@ left: 6%;
     z-index: 1;
     top: 0; 
     left: 0;
+    box-shadow: 0 0 10px #c3c3c3;
 }
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
@@ -78,7 +79,6 @@ left: 6%;
 	align-items: center;
 	width: 100%;
 	height: 45px;
-    /*margin-left: 20px;*/
     list-style-position: inside;
 }
 .menu ul li:nth-child(1) a::before {
@@ -361,13 +361,13 @@ main h6 {
 .row .tasks ul {
 	margin-top: 50px;
     justify-content: center;
+    align-items: center;
 	display: grid;
 	grid-template-columns: 5% 75% 5% 5%;
-	grid-auto-rows: minmax(50px, auto);
-	grid-row-gap: 10px;
+	grid-auto-rows: minmax(1px, auto);
+	grid-row-gap: 15px;
 }
-.row .tasks ul li input{margin-top: 15px;}
-.row .tasks ul li {border-bottom: 2px solid #d3d3d3;	}
+.row .tasks ul li div {width: 100%; border-bottom: 2px solid #d3d3d3;}
 .row .tasks ul li:nth-child(13),.row .tasks ul li:nth-child(14),
 .row .tasks ul li:nth-child(15), .row .tasks ul li:nth-child(16){
 	border-bottom: none;
@@ -375,11 +375,10 @@ main h6 {
 .row .tasks ul li img {
 	width: 20px;
 	height: 20px;
-	margin-top: 10px;
 }
 .row .tasks ul li span{
 	font-size: 14px;
-	line-height: 1.5;
+	line-height: 1.2;
 }
 .row .tasks .tasksimg, .row .emplo .emploimg {
 	position: absolute;
